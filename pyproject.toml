@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "perelet-test-task"
+version = "0.1.0"
+description = ""
+authors = ["sazzeck <sazzeckprog@gmail.com>"]
+readme = "README.md"
+packages = [{include = "perelet_test_task"}]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+aiohttp = "^3.8.3"
+numpy = "^1.24.2"
+
+[tool.poetry.group.dev.dependencies]
+flake8 = "^6.0.0"
+black = "^23.1.0"
+
+[tool.black]
+line-length = 80
+target-version = ["py39"]
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
